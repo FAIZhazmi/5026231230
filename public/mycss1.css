@@ -1,0 +1,44 @@
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgb(255, 255, 255);
+    color: blueviolet;
+}
+p   {
+    text-align: justify;
+}    
+.formatheader {
+    font-size: large;
+    font-weight: bold;
+}
+.resizable-horizontal {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    resize: horizontal;
+    overflow: scroll;
+}
+.outline-box {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    outline: 4px solid red;
+    outline-offset: 10px;
+}
+
+.text-shadow {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-shadow: 4px 2px 1px red;
+}
+
+.box-shadow {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 10px 10px 10px gray;
+}

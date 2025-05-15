@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gozeal Linktree</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    body {
+      background-color: #00aeef;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 30px;
+    }
+    .profile-img {
+      width: 300px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .username {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+    .section-title {
+      font-weight: bold;
+      margin: 30px 0 10px;
+      color: white;
+    }
+    .button-wrapper {
+        position: relative;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .button-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        }
+    
+
+    .btn-bg {
+        position: absolute;
+        top: auto;
+        margin-left: -12px;
+        bottom: 0px;
+        height: 20%;
+        width: 98%;
+        transform: skewX(56deg);
+        z-index: 0;
+    }
+
+    .btn-linktree {
+        position: relative;
+        z-index: 1;
+        background-color: yellow; /* default, ditimpa sama kelas seperti btn-yellow */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        color: black;
+        border: 0.5px solid black;
+        margin-left: 80px;
+        padding: 15px 20px;
+        padding-right: 0%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        height: 160%;
+        width: 80%;
+        text-decoration: none;
+        box-shadow: none;
+        transition: all 0.2s ease-in-out;
+        border-radius: 0;
+    }
+
+
+    .btn-linktree:hover {
+        transform: scale(0.96) translateY(2px);
+    }
+
+    .btn-linktree span {
+      display: flex;
+      align-items: center;
+    }
+    .diagonal-stripe {
+    width: 20px;
+    height: 60px;
+    background: repeating-linear-gradient(
+        -177deg,       /* arah garis */
+        black, 
+        black 0.2px, 
+        gold 8px, 
+        gold 8px
+    );
+    border: 0.5px solid black;
+    transform: skewY(27deg);
+    margin-right: -3px;
+    z-index: 2;
+    }
+    .corner {
+    width: 1%;
+    height: 0;
+    border-top: 7.8px solid transparent;
+    border-left: 12px solid #00aeef;
+    border-right: 12px solid transparent;
+    border-bottom: 7.8px solid #00aeef; /* Warna segitiga */
+    margin-left: -22.5px;
+    margin-bottom: -55px;
+    z-index: 2;
+}
+.corner-top {
+    width: 1%;
+    height: 0;
+    border-top: 12px solid #00aeef;
+    border-left: 7.8px solid transparent;
+    border-right: 12px solid #00aeef;
+    border-bottom: 7.8px solid transparent; /* Warna segitiga */
+    margin-right: -247.5px;
+    margin-top: -48px;
+    z-index: -1;
+}
+
+    .btn-yellow { background-color: #FFC213; }
+    .btn-pink { background-color: #ED63D2; }
+    .btn-green { background-color: #39E09B; }
+    .btn-purple { background-color: #7551E7; }
+
+    .btn-icon {
+      width: 60px;
+      height: 60px;
+      margin-left: -205px;
+    }
+
+    .more-icon {
+      color: rgba(0, 0, 0, 0.5);
+      margin-right: -175px;
+    }
+    .judul{
+        display: flex;
+        align-items: center;
+        margin-left: -140px;
+    }
+
+    .social-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        }
+
+.social-buttons a {
+        color: white;
+        background-color: transparent;
+        padding: 10px;
+        font-size: 24px;
+        transition: 0.3s ease;
+        text-decoration: none;
+        }
+
+.social-buttons a:hover {
+        transform:  scale(1.03);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* bayangan biar berasa ngambang */
+        }
+
+  </style>
+</head>
+<body>
+  <div class="container text-center">
+    <img src="img/materialC/Screenshot_2025-04-17_063618-removebg-preview.png" alt="Profile" class="profile-img" />
+    <div class="username">@gozeal</div>
+
+    <div class="section-title">Official Store</div>
+    <div class="button-wrapper">
+        <div class="button-container">
+          <a href="https://shopee.co.id/gozealstore?is_from_login=true" class="btn-linktree btn-yellow">
+            <div class="corner"></div>
+            <span><img src="img/materialC/shopee-logo-transparent-free-png.webp" class="btn-icon"></span>
+            <p class="judul">SHOPEE</p>
+            <i class="fas fa-ellipsis-v more-icon"></i>
+            <div class="btn-bg bg-dark"></div>
+            <div class="corner-top"></div>
+            <div class="diagonal-stripe"></div>
+          </a>
+        </div>
+    </div>
+    
+    <div class="button-wrapper">
+        <div class="button-container">
+          <a href="https://www.tiktok.com/@gozealofficial" class="btn-linktree btn-pink">
+            <div class="corner"></div>
+            <span><img src="img/materialC/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.webp" class="btn-icon"></span>
+            <p class="judul">TIK TOK</p>
+            <i class="fas fa-ellipsis-v more-icon"></i>
+            <div class="btn-bg bg-dark"></div>
+            <div class="corner-top"></div>
+            <div class="diagonal-stripe"></div>
+          </a>
+        </div>
+    </div>
+
+    <div class="button-wrapper">
+        <div class="button-container">
+          <a href="https://www.tokopedia.com/gozealstore" class="btn-linktree btn-green">
+            <div class="corner"></div>
+            <span><img src="img/materialC/2205694.webp" class="btn-icon"></span>
+            <p class="judul">TOKPED</p>
+            <i class="fas fa-ellipsis-v more-icon"></i>
+            <div class="btn-bg bg-dark"></div>
+            <div class="corner-top"></div>
+            <div class="diagonal-stripe"></div>
+          </a>
+        </div>
+    </div>
+       
+    <div class="button-wrapper">
+        <div class="button-container">
+          <a href="https://www.google.com/maps/place/GOZEAL+STORE/@-6.1269184,106.1625481,17z/data=!3m1!4b1!4m6!3m5!1s0x2e422193c5f29041:0xa2b4396a376fca90!8m2!3d-6.1269184!4d106.1625481!16s%2Fg%2F11gb3lwdgt?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D" class="btn-linktree btn-purple">
+            <div class="corner"></div>
+            <span><img src="img/materialC/Screenshot 2025-04-17 064957.png" class="btn-icon"></span>
+            <p class="judul">OFFLINE</p>
+            <i class="fas fa-ellipsis-v more-icon"></i>
+            <div class="btn-bg bg-dark"></div>
+            <div class="corner-top"></div>
+            <div class="diagonal-stripe"></div>
+          </a>
+        </div>
+    </div>
+
+        <div class="section-title">Customer Service</div>
+
+        <div class="button-wrapper">
+            <div class="button-container">
+              <a href="#" class="btn-linktree btn-yellow">
+                <div class="corner"></div>
+                <span><img src="img/materialC/Screenshot_2025-04-17_065523-removebg-preview.png" class="btn-icon" width="48" height="48"></span>
+                <p class="judul">WHATSAPP</p>
+                <i class="fas fa-ellipsis-v more-icon"></i>
+                <div class="btn-bg bg-dark"></div>
+                <div class="corner-top"></div>
+                <div class="diagonal-stripe"></div>
+              </a>
+            </div>
+        </div>
+
+        <div class="social-buttons">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+          
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
