@@ -43,7 +43,7 @@
         justify-content: space-between;
         width: 100%;
         }
-    
+
 
     .btn-bg {
         position: absolute;
@@ -93,9 +93,9 @@
     height: 60px;
     background: repeating-linear-gradient(
         -177deg,       /* arah garis */
-        black, 
-        black 0.2px, 
-        gold 8px, 
+        black,
+        black 0.2px,
+        gold 8px,
         gold 8px
     );
     border: 0.5px solid black;
@@ -172,7 +172,7 @@
 </head>
 <body>
   <div class="container text-center">
-    <img src="img/materialC/Screenshot_2025-04-17_063618-removebg-preview.png" alt="Profile" class="profile-img" />
+    <img src="{{ asset('img/materialC/Screenshot_2025-04-17_063618-removebg-preview.png') }}" alt="Profile" class="profile-img" />
     <div class="username">@gozeal</div>
 
     <div class="section-title">Official Store</div>
@@ -180,7 +180,7 @@
         <div class="button-container">
           <a href="https://shopee.co.id/gozealstore?is_from_login=true" class="btn-linktree btn-yellow">
             <div class="corner"></div>
-            <span><img src="img/materialC/shopee-logo-transparent-free-png.webp" class="btn-icon"></span>
+            <span><img src="{{ asset('img/materialC/shopee-logo-transparent-free-png.webp') }}" class="btn-icon"></span>
             <p class="judul">SHOPEE</p>
             <i class="fas fa-ellipsis-v more-icon"></i>
             <div class="btn-bg bg-dark"></div>
@@ -189,12 +189,12 @@
           </a>
         </div>
     </div>
-    
+
     <div class="button-wrapper">
         <div class="button-container">
           <a href="https://www.tiktok.com/@gozealofficial" class="btn-linktree btn-pink">
             <div class="corner"></div>
-            <span><img src="img/materialC/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.webp" class="btn-icon"></span>
+            <span><img src="{{ asset('img/materialC/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.webp') }}" class="btn-icon"></span>
             <p class="judul">TIK TOK</p>
             <i class="fas fa-ellipsis-v more-icon"></i>
             <div class="btn-bg bg-dark"></div>
@@ -208,7 +208,7 @@
         <div class="button-container">
           <a href="https://www.tokopedia.com/gozealstore" class="btn-linktree btn-green">
             <div class="corner"></div>
-            <span><img src="img/materialC/2205694.webp" class="btn-icon"></span>
+            <span><img src="{{ asset('img/materialC/2205694.webp') }}" class="btn-icon"></span>
             <p class="judul">TOKPED</p>
             <i class="fas fa-ellipsis-v more-icon"></i>
             <div class="btn-bg bg-dark"></div>
@@ -217,12 +217,12 @@
           </a>
         </div>
     </div>
-       
+
     <div class="button-wrapper">
         <div class="button-container">
           <a href="https://www.google.com/maps/place/GOZEAL+STORE/@-6.1269184,106.1625481,17z/data=!3m1!4b1!4m6!3m5!1s0x2e422193c5f29041:0xa2b4396a376fca90!8m2!3d-6.1269184!4d106.1625481!16s%2Fg%2F11gb3lwdgt?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D" class="btn-linktree btn-purple">
             <div class="corner"></div>
-            <span><img src="img/materialC/Screenshot 2025-04-17 064957.png" class="btn-icon"></span>
+            <span><img src="{{ asset('img/materialC/Screenshot 2025-04-17 064957.png') }}" class="btn-icon"></span>
             <p class="judul">OFFLINE</p>
             <i class="fas fa-ellipsis-v more-icon"></i>
             <div class="btn-bg bg-dark"></div>
@@ -238,7 +238,7 @@
             <div class="button-container">
               <a href="#" class="btn-linktree btn-yellow">
                 <div class="corner"></div>
-                <span><img src="img/materialC/Screenshot_2025-04-17_065523-removebg-preview.png" class="btn-icon" width="48" height="48"></span>
+                <span><img src="{{ asset('img/materialC/Screenshot_2025-04-17_065523-removebg-preview.png') }}" class="btn-icon" width="48" height="48"></span>
                 <p class="judul">WHATSAPP</p>
                 <i class="fas fa-ellipsis-v more-icon"></i>
                 <div class="btn-bg bg-dark"></div>
@@ -253,7 +253,7 @@
             <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
             <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
-          
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
