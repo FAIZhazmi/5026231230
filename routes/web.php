@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController ;
 use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\PensilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,16 +22,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('dosen', [DosenController::class,'index']);
-Route::get('welcome', [DosenController::class,'welcome']);
-Route::get('/pegawai/{nama}', [PegawaiController::class,'index']);
-Route::get('/formulir', [PegawaiController::class,'formulir']);
-Route::post('/formulir/proses', [PegawaiController::class,'proses']);
+//Route::get('dosen', [DosenController::class,'index']);
+//Route::get('welcome', [DosenController::class,'welcome']);
+//Route::get('/pegawai/{nama}', [PegawaiController::class,'index']);
+//Route::get('/formulir', [PegawaiController::class,'formulir']);
+//Route::post('/formulir/proses', [PegawaiController::class,'proses']);
 
 // route blog
-Route::get('/blog', [BlogController::class,'home']);
-Route::get('/blog/tentang', [BlogController::class,'tentang']);
-Route::get('/blog/kontak', [BlogController::class,'kontak']);
+//Route::get('/blog', [BlogController::class,'home']);
+//Route::get('/blog/tentang', [BlogController::class,'tentang']);
+//Route::get('/blog/kontak', [BlogController::class,'kontak']);
 
 Route::get('/frontend', function () {
     return view('frontend');
@@ -95,5 +96,13 @@ Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika for
 Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
-
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+// CRUD Pensil
+Route::get('/pensil', [PensilController::class, 'index']);
+Route::get('/pensil/tambah', [PensilController::class, 'tambah']);
+Route::get('/pensil/edit/{id}', [PensilController::class, 'edit']);
+Route::post('/pensil/store', [PensilController::class, 'store']);
+Route::post('/pensil/update', [PensilController::class, 'update']);
+Route::get('/pensil/hapus/{id}', [PensilController::class, 'hapus']);
+Route::get('/pensil/cari', [PensilController::class, 'cari']);
