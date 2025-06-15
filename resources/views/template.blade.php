@@ -119,10 +119,10 @@
                 <a class="nav-link" href="/karyawan"><i class="fas fa-user-tie"></i> Latihan 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-brain"></i> Latihan 2</a>
+                <a class="nav-link" href="/karyawan"><i class="fas fa-brain"></i> Latihan 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-lightbulb"></i> Latihan 3</a>
+                <a class="nav-link" href="/pagecounter"><i class="fas fa-lightbulb"></i> Latihan 3</a>
             </li>
         </ul>
     </nav>

@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\PensilController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\CounterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -87,7 +88,7 @@ Route::get('validasi', function () {
 });
 
 Route::get('ETS', function () {
-	return view('index');
+	return view('indexf');
 });
 
 //route pegawaiDB
@@ -114,3 +115,5 @@ Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
 Route::post('/karyawan/store', [KaryawanController::class, 'store']);
 Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
 Route::get('/karyawan/cari', [KaryawanController::class, 'cari']);
+
+Route::get('/pagecounter', [CounterController::class, 'index']);
