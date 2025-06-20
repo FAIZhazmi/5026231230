@@ -117,3 +117,18 @@ Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
 Route::get('/karyawan/cari', [KaryawanController::class, 'cari']);
 
 Route::get('/pagecounter', [CounterController::class, 'index']);
+
+use App\Http\Controllers\KeranjangController;
+
+Route::get('/keranjang', [KeranjangController::class, 'index'])->name('keranjang.index');
+Route::get('/keranjang/create', [KeranjangController::class, 'create'])->name('keranjang.create');
+Route::post('/keranjang', [KeranjangController::class, 'store'])->name('keranjang.store');
+Route::delete('/keranjang/{id}', [KeranjangController::class, 'destroy'])->name('keranjang.destroy');
+Route::get('/keranjang/cari', [KeranjangController::class, 'cari'])->name('keranjang.cari');
+
+use App\Http\Controllers\NewKaryawanController;
+
+Route::get('/newkaryawan', [NewKaryawanController::class, 'index']);
+Route::get('/newkaryawan/tambah', [NewKaryawanController::class, 'tambah']);
+Route::post('/newkaryawan/store', [NewKaryawanController::class, 'store']);
+Route::get('/newkaryawan/hapus/{id}', [NewKaryawanController::class, 'hapus']);

@@ -15,7 +15,7 @@ class PegawaiDBController extends Controller
         $pegawai = DB::table('pegawai')->paginate(10);
         //echo $pegawai
     	// mengirim data pegawai ke view index
-		return view('index',['pegawai' => $pegawai]);
+		return view('index1',['pegawai' => $pegawai]);
 
 	}
 
