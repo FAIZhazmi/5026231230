@@ -14,7 +14,7 @@ class NewKaryawanController extends Controller
 		// $karyawan = DB::table('karyawan')->get();
         $newkaryawan = DB::table('newkaryawan')->paginate(10);
     	// mengirim data pegawai ke view index
-		return view('index5',['newkaryawan' => $newkaryawan]);
+		return view('index5',['eas' => $newkaryawan]);
 
 	}
 
@@ -37,7 +37,7 @@ class NewKaryawanController extends Controller
 			'gaji' => $request->gaji
 		]);
 		// alihkan halaman ke halaman karyawan
-		return redirect('/newkaryawan');
+		return redirect('/eas');
 
 	}
 
@@ -50,6 +50,6 @@ class NewKaryawanController extends Controller
 		// return view('hapus');
 
 		// alihkan halaman ke halaman pegawai
-		return redirect('/newkaryawan');
+		return redirect('/eas');
 	}
 }

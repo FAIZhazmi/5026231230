@@ -128,7 +128,7 @@ Route::get('/keranjang/cari', [KeranjangController::class, 'cari'])->name('keran
 
 use App\Http\Controllers\NewKaryawanController;
 
-Route::get('/newkaryawan', [NewKaryawanController::class, 'index']);
-Route::get('/newkaryawan/tambah', [NewKaryawanController::class, 'tambah']);
-Route::post('/newkaryawan/store', [NewKaryawanController::class, 'store']);
-Route::get('/newkaryawan/hapus/{id}', [NewKaryawanController::class, 'hapus']);
+Route::get('/eas', [NewKaryawanController::class, 'index']);
+Route::get('/eas/tambah', [NewKaryawanController::class, 'tambah']);
+Route::post('/eas/store', [NewKaryawanController::class, 'store']);
+Route::get('/eas/hapus/{id}', [NewKaryawanController::class, 'hapus']);

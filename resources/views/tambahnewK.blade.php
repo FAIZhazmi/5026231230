@@ -3,12 +3,12 @@
 @section('content')
 	<h3>Data Karyawan</h3>
 
-	<a href="/karyawan" class="btn btn-info"> Kembali</a>
+	<a href="/eas" class="btn btn-info"> Kembali</a>
 
 	<br/>
 	<br/>
 
-	<form action="/newkaryawan/store" method="post">
+	<form action="/eas/store" method="post">
 		{{ csrf_field() }}
         <div class="row">
             <div class="col-3">
